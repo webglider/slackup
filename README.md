@@ -2,10 +2,22 @@
 
 Backup slack messages.
 
+### Prerequisites
+
 Install slack SDK
 ```
 pip install slack_sdk
+pip install requests
 ```
+You need to get a user token for the Slack API. For this you need to create a slack App, which is straightforward to do: https://api.slack.com/apps. Create an App selecting the desired workspace. 
+
+Go to "OAuth & Permissions", scroll down to "User Token Scopes", and add the following scopes:
+![image](https://user-images.githubusercontent.com/751875/135373138-dbf2f67f-91a7-4e0b-8d75-9b80bea448be.png)
+
+Then install the app on your workspace (via Install App option).
+
+
+### Usage
 
 Clone repository and cd into it
 ```
